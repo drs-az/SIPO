@@ -1,44 +1,47 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SIPO – Super Image Prompt Optimizer for GPT-4o</title>
-  <!-- Tailwind CSS -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SIPO is a premium image prompt optimization tool for GPT-4o, helping you craft stunning visuals from simple ideas." />
+  <title>SIPO – Super Image Prompt Optimizer for GPT‑4o</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     html { font-family: 'Inter', sans-serif; }
   </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 antialiased">
   <!-- Header -->
-  <header class="bg-white/80 backdrop-blur-md fixed w-full z-10 shadow-sm">
+  <header class="bg-white/70 backdrop-blur-sm fixed w-full z-10 shadow-sm">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
       <h1 class="text-2xl font-bold text-indigo-600">SIPO</h1>
-      <nav class="space-x-6 text-gray-700">
+      <nav class="space-x-6 text-gray-700 hidden sm:block">
         <a href="#features" class="hover:text-indigo-600 transition">Features</a>
         <a href="#how-it-works" class="hover:text-indigo-600 transition">How It Works</a>
         <a href="#framework" class="hover:text-indigo-600 transition">Framework</a>
         <a href="#try" class="px-4 py-2 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700 transition">Try Now</a>
       </nav>
     </div>
-  </header>  <!-- Hero Section -->  <section class="pt-24 bg-gradient-to-r from-indigo-600 to-blue-500 text-white">
-    <div class="container mx-auto px-6 flex flex-col-reverse lg:flex-row items-center py-20">
+  </header>
+  <!-- Hero -->
+  <section class="pt-32 pb-20 bg-gradient-to-r from-purple-700 via-indigo-600 to-blue-500 text-white">
+    <div class="container mx-auto px-6 flex flex-col-reverse lg:flex-row items-center">
       <div class="w-full lg:w-1/2 text-center lg:text-left">
-        <h2 class="text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">Transform Simple Ideas into Breathtaking Images</h2>
-        <p class="text-lg lg:text-xl mb-8 opacity-90">Elevate any prompt into a hyper-detailed, cinema-quality instruction set for GPT-4o.</p>
+        <h2 class="text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">Elevate Every Prompt</h2>
+        <p class="text-lg lg:text-xl mb-8 opacity-90">Transform simple requests into breathtaking, production‑ready instructions for GPT‑4o image generation.</p>
         <a href="#try" class="inline-block px-8 py-4 bg-white text-indigo-600 font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition">Optimize Your Prompt</a>
       </div>
       <div class="w-full lg:w-1/2 mb-12 lg:mb-0 flex justify-center">
-        <!-- Placeholder for illustrative graphic -->
-        <div class="w-80 h-80 bg-white/10 rounded-full flex items-center justify-center text-6xl text-white opacity-50">🎨</div>
+        <div class="w-80 h-80 bg-white/10 rounded-3xl flex items-center justify-center text-6xl text-white opacity-70">🎨</div>
       </div>
     </div>
-  </section>  <!-- Features Section -->  <section id="features" class="py-20">
+  </section>
+  <!-- Features -->
+  <section id="features" class="py-20">
     <div class="container mx-auto px-6">
       <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">Key Features</h3>
-      <div class="grid md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         {{#each features}}
         <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transform hover:scale-105 transition">
           <h4 class="text-2xl font-semibold mb-3 text-indigo-600">{{title}}</h4>
@@ -47,7 +50,9 @@
         {{/each}}
       </div>
     </div>
-  </section>  <!-- How It Works Section -->  <section id="how-it-works" class="bg-white py-20">
+  </section>
+  <!-- How It Works -->
+  <section id="how-it-works" class="bg-white py-20">
     <div class="container mx-auto px-6">
       <h3 class="text-4xl font-bold text-center mb-10 text-gray-800">How It Works</h3>
       <div class="mx-auto max-w-2xl text-lg space-y-6 text-gray-600">
@@ -57,28 +62,34 @@
         <p><strong>4. Generate:</strong> Invoke GPT-4o to create your masterpiece.</p>
       </div>
     </div>
-  </section>  <!-- Prompting Framework Section -->  <section id="framework" class="py-20 bg-gray-50">
+  </section>
+  <!-- Prompting Framework -->
+  <section id="framework" class="py-20 bg-gray-50">
     <div class="container mx-auto px-6">
       <h3 class="text-4xl font-bold text-center mb-8 text-gray-800">Prompting Framework</h3>
       <div class="mx-auto max-w-3xl">
         <ul class="space-y-4 text-gray-700">
           <li><span class="font-semibold">Subject(s):</span> Who or what is central?</li>
-          <li><span class="font-semibold">Setting & Environment:</span> Time of day, location, weather.</li>
-          <li><span class="font-semibold">Mood & Atmosphere:</span> Emotional tone, color palette.</li>
-          <li><span class="font-semibold">Composition & Framing:</span> Camera angle, depth of field.</li>
-          <li><span class="font-semibold">Lighting & Color:</span> Light quality, color temperature.</li>
-          <li><span class="font-semibold">Artistic Style & Medium:</span> Photorealism, painterly, stylized.</li>
+          <li><span class="font-semibold">Setting &amp; Environment:</span> Time of day, location, weather.</li>
+          <li><span class="font-semibold">Mood &amp; Atmosphere:</span> Emotional tone, color palette.</li>
+          <li><span class="font-semibold">Composition &amp; Framing:</span> Camera angle, depth of field.</li>
+          <li><span class="font-semibold">Lighting &amp; Color:</span> Light quality, color temperature.</li>
+          <li><span class="font-semibold">Artistic Style &amp; Medium:</span> Photorealism, painterly, stylized.</li>
           <li><span class="font-semibold">Technical Specs:</span> Resolution, aspect ratio, lens type.</li>
         </ul>
         <p class="mt-6 text-center text-gray-600">Plus dynamic defaults: volumetric light, hyper-detailed textures, epic scale.</p>
       </div>
     </div>
-  </section>  <!-- Call to Action Section -->  <section id="try" class="py-20 bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center">
+  </section>
+  <!-- Call to Action -->
+  <section id="try" class="py-20 bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center">
     <div class="container mx-auto px-6">
       <h3 class="text-3xl font-bold mb-6">Ready to Create Masterpieces?</h3>
       <a href="#" class="px-10 py-4 bg-white/90 text-indigo-600 font-semibold rounded-full shadow-lg hover:bg-white transition">Try SIPO Now</a>
     </div>
-  </section>  <!-- Footer -->  <footer class="bg-gray-800 text-gray-400 py-10">
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 py-10">
     <div class="container mx-auto px-6 text-center">
       <p>&copy; 2025 SIPO. Crafted for visionary creators.</p>
       <p class="mt-2"><a href="mailto:support@chatgpt.com" class="hover:text-white">support@chatgpt.com</a></p>
