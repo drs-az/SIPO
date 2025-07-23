@@ -33,7 +33,9 @@
         <a href="#try" class="inline-block px-8 py-4 bg-white text-indigo-600 font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition">Optimize Your Prompt</a>
       </div>
       <div class="w-full lg:w-1/2 mb-12 lg:mb-0 flex justify-center">
-        <div class="w-80 h-80 bg-white/10 rounded-3xl flex items-center justify-center text-6xl text-white opacity-70"><img src="img/SIPO-HERO.png" style="width: 100%;"></div>
+        <div class="w-80 h-80 bg-white/10 rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/30 flex items-center justify-center">
+          <img src="img/SIPO-HERO.png" alt="SIPO hero" class="object-cover w-full h-full rounded-3xl" />
+        </div>
       </div>
     </div>
   </section>
@@ -41,13 +43,31 @@
   <section id="features" class="py-20">
     <div class="container mx-auto px-6">
       <h3 class="text-4xl font-bold text-center mb-12 text-gray-800">Key Features</h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {{#each features}}
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transform hover:scale-105 transition">
-          <h4 class="text-2xl font-semibold mb-3 text-indigo-600">{{title}}</h4>
-          <p class="text-gray-600">{{description}}</p>
+          <h4 class="text-2xl font-semibold mb-3 text-indigo-600">Natural Language Input → Professional Prompt Output</h4>
+          <p class="text-gray-600">Start with a simple idea in your own words—SIPO transforms it into a highly technical, cinematic-grade prompt ready for GPT-4o.</p>
         </div>
-        {{/each}}
+        <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+          <h4 class="text-2xl font-semibold mb-3 text-indigo-600">Cinematic Composition &amp; Framing</h4>
+          <p class="text-gray-600">Every image prompt is infused with expert-level composition techniques: rule of thirds, depth of field, low-angle hero shots, and dynamic subject framing—automatically.</p>
+        </div>
+        <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+          <h4 class="text-2xl font-semibold mb-3 text-indigo-600">Context-Aware Environments</h4>
+          <p class="text-gray-600">SIPO adds intelligent environmental detail: time of day, weather, lighting angle, atmospheric effects, and background richness to match your scene’s mood.</p>
+        </div>
+        <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+          <h4 class="text-2xl font-semibold mb-3 text-indigo-600">Photorealism or Stylized Art—Your Call</h4>
+          <p class="text-gray-600">Choose from styles like photorealistic, painterly, hand-drawn, or cinematic. SIPO handles the artistic direction so your visuals match your brand or intent.</p>
+        </div>
+        <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+          <h4 class="text-2xl font-semibold mb-3 text-indigo-600">Lighting Mastery</h4>
+          <p class="text-gray-600">From golden-hour rim lighting to moody noir shadows, SIPO injects visual drama with nuanced lighting instructions and color temperature control.</p>
+        </div>
+        <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transform hover:scale-105 transition">
+          <h4 class="text-2xl font-semibold mb-3 text-indigo-600">Technical Precision Built In</h4>
+          <p class="text-gray-600">Specify resolution, aspect ratio, lens type, and focal depth—or let SIPO default to ultra-HD, high-fidelity output with fine surface detail.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -56,10 +76,10 @@
     <div class="container mx-auto px-6">
       <h3 class="text-4xl font-bold text-center mb-10 text-gray-800">How It Works</h3>
       <div class="mx-auto max-w-2xl text-lg space-y-6 text-gray-600">
-        <p><strong>1. Input:</strong> Enter your basic image idea or prompt.</p>
-        <p><strong>2. Optimize:</strong> SIPO analyzes and enriches it using our comprehensive framework.</p>
-        <p><strong>3. Review:</strong> Receive an ultra-detailed, production-ready prompt.</p>
-        <p><strong>4. Generate:</strong> Invoke GPT-4o to create your masterpiece.</p>
+        <p><strong>1. Describe Your Idea:</strong> Type what you want to see. No need to use technical jargon or understand how image prompting works.</p>
+        <p><strong>2. SIPO Optimizes It:</strong> Behind the scenes, SIPO interprets your input and expands it using its multi-layered prompting framework.</p>
+        <p><strong>3. Preview the Optimized Prompt (optional):</strong> See how your idea was transformed into a high-quality visual instruction set.</p>
+        <p><strong>4. Generate with GPT-4o:</strong> Use the enhanced prompt to instantly create cinematic, detailed, and stylistically controlled images—no guesswork required.</p>
       </div>
     </div>
   </section>
@@ -69,15 +89,15 @@
       <h3 class="text-4xl font-bold text-center mb-8 text-gray-800">Prompting Framework</h3>
       <div class="mx-auto max-w-3xl">
         <ul class="space-y-4 text-gray-700">
-          <li><span class="font-semibold">Subject(s):</span> Who or what is central?</li>
-          <li><span class="font-semibold">Setting &amp; Environment:</span> Time of day, location, weather.</li>
-          <li><span class="font-semibold">Mood &amp; Atmosphere:</span> Emotional tone, color palette.</li>
-          <li><span class="font-semibold">Composition &amp; Framing:</span> Camera angle, depth of field.</li>
-          <li><span class="font-semibold">Lighting &amp; Color:</span> Light quality, color temperature.</li>
-          <li><span class="font-semibold">Artistic Style &amp; Medium:</span> Photorealism, painterly, stylized.</li>
-          <li><span class="font-semibold">Technical Specs:</span> Resolution, aspect ratio, lens type.</li>
+          <li><span class="font-semibold">Subject(s):</span> Who or what is central? Defined with precision and visual hierarchy.</li>
+          <li><span class="font-semibold">Setting &amp; Environment:</span> Time of day, weather, location, and spatial context.</li>
+          <li><span class="font-semibold">Mood &amp; Atmosphere:</span> Emotional tone, color palette, and visual energy.</li>
+          <li><span class="font-semibold">Composition &amp; Framing:</span> Camera angle, depth of field, visual balance.</li>
+          <li><span class="font-semibold">Lighting &amp; Color:</span> Light source quality, highlights, and temperature control.</li>
+          <li><span class="font-semibold">Artistic Style &amp; Medium:</span> Choose or default to photorealism, cinematic, hand-drawn, or painterly.</li>
+          <li><span class="font-semibold">Technical Specs:</span> Resolution, aspect ratio, lens type, and fine detail—all tuned for impact.</li>
         </ul>
-        <p class="mt-6 text-center text-gray-600">Plus dynamic defaults: volumetric light, hyper-detailed textures, epic scale.</p>
+        <p class="mt-6 text-center text-gray-600">Bonus: Creative defaults include volumetric lighting, ambient texture effects, and “hyper-detailed” realism—so your images look premium even when your prompt is minimal.</p>
       </div>
     </div>
   </section>
